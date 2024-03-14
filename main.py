@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication
+from PySide6.QtWidgets import QApplication
 from mainWindow import MainWindow
 import sys
 
@@ -9,7 +9,7 @@ def main():
         style = f.read()
         app.setStyleSheet(style)
     window = MainWindow()
-    window.showMaximized()
+    window.show()
     sys.exit(app.exec())
 
 
